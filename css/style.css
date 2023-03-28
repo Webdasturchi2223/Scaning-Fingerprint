@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Popins', sans-serif;
     display: flex;
     justify-content: center;
@@ -13,14 +13,14 @@ body{
     background: #111;
 }
 
-.scan{
+.scan {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.scan .fingerprint{
+.scan .fingerprint {
     position: relative;
     width: 300px;
     height: 380px;
@@ -28,7 +28,7 @@ body{
     background-size: 300px;
 }
 
-.scan .fingerprint::before{
+.scan .fingerprint::before {
     content: '';
     position: absolute;
     top: 0;
@@ -40,17 +40,19 @@ body{
     animation: animate 4s ease-in-out infinite;
 }
 
-@keyframes animate{
+@keyframes animate {
+
     0%,
-    100%{
+    100% {
         height: 0;
     }
-    50%{
+
+    50% {
         height: 100%;
     }
 }
 
-.scan .fingerprint::after{
+.scan .fingerprint::after {
     content: '';
     position: absolute;
     top: 0;
@@ -63,17 +65,19 @@ body{
     animation: animate_line 4s ease-in-out infinite;
 }
 
-@keyframes animate_line{
+@keyframes animate_line {
+
     0%,
-    100%{
+    100% {
         top: 0;
     }
-    50%{
+
+    50% {
         top: 100%;
     }
 }
 
-.scan h1{
+.scan h1 {
     text-transform: uppercase;
     font-size: 2em;
     letter-spacing: 2px;
@@ -83,12 +87,14 @@ body{
     animation: animate_text 1s steps(1) infinite;
 }
 
-@keyframes animate_text{
+@keyframes animate_text {
+
     0%,
-    100%{
+    100% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
 }
